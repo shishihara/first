@@ -1,5 +1,3 @@
-//first
-
 #include<stdio.h>
 #include<string>
 #include<iostream>
@@ -35,23 +33,24 @@ class Meal
 class  MealBuilder
 {
 	public:
-	string food;
-	string drink;
-	void buildFood()
-	{
-	        meal.setFood(food);
-	}
-	void buildDrink()
-	{
-		meal.setDrink(drink);
-	}
-	int getMeal()
-	{
-		meal.getFood();
-		meal.getDrink();
-	}
+		string food;
+	    string drink;
+	    void buildFood()
+	    {
+		    meal.setFood(food);
+	    }
+	    void buildDrink()
+	    {
+		    meal.setDrink(drink);
+	    }
+	    int getMeal()
+	    {
+		    meal.getFood();
+		    meal.getDrink();
+	    }
 	private:
-	Meal meal;
+	    Meal meal;
+	
 };
 
 
@@ -79,6 +78,8 @@ class KFCWaiter
 
 
 
+
+
 class SubMealBuilderA : public MealBuilder
 {
 	public :
@@ -96,6 +97,7 @@ class SubMealBuilderA : public MealBuilder
 		{
 			drink = "cola";
 		}
+		
 };
 
 class SubMealBuilderB : public MealBuilder
@@ -116,6 +118,8 @@ class SubMealBuilderB : public MealBuilder
 			drink = "orangejuice";
 		}
 };
+
+
 
 
 int main()
@@ -141,5 +145,8 @@ int main()
 	    k.setMealBuilder(s.food,s.drink);
 	    k.construt();
 	}
+
 return 0;
+
+	
 }
