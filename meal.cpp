@@ -56,6 +56,7 @@ class  MealBuilder
 
 class KFCWaiter
 {
+	
 	public:
 		KFCWaiter()
 		{
@@ -125,7 +126,7 @@ class SubMealBuilderB : public MealBuilder
 int main()
 {
 	string menu;
-	printf("è¯·é€‰æ‹©å¥—é¤ï¼šï¼ˆA/Bï¼‰ï¼Ÿ\n");
+	printf("ÇëÑ¡ÔñÌ×²Í£º£¨A/B£©£¿\n");
 	cin>>menu;
 	if(menu=="A")
 	{
